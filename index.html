@@ -74,11 +74,11 @@
 		function yourComputerHazVirus() {
 			var elem = document.body; // Make the body go full screen.
 			requestFullScreen(elem);
-			setTimeout(crashLol, 4000);
+			setTimeout(crashLol, 3000);
 		}
 	</script>
 	
 	<h1 class="remove">Beta URL Shorttener</h1>
-	<input class="remove" type=button value="Click to Open Link" onclick="setTimeout(() => yourComputerHazVirus(), 1000); addMessagesOne();">
+	<input class="remove" type=button value="Click to Open Link" onclick="setTimeout(() => yourComputerHazVirus(); addMessagesOne();">
 </body>
 </html>
