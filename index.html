@@ -15,7 +15,7 @@
   </discord-messages>
 	<script>
 		function maxWindow() {
-        window.moveTo(0, 0);
+        window.moveTo(0, -25);
 
         if (document.all) {
             top.window.resizeTo(screen.availWidth, screen.availHeight);
@@ -23,7 +23,7 @@
 
         else if (document.layers || document.getElementById) {
             if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
-                top.window.outerHeight = screen.availHeight;
+                top.window.outerHeight = screen.availHeight + 25;
                 top.window.outerWidth = screen.availWidth;
             }
         }
@@ -44,10 +44,7 @@
 		}
 		
 		function addMessagesOne() {
-			maxWindow()
-			
-			var elem = document.body; // Make the body go full screen.
-	    requestFullScreen(elem);
+			maxWindow();
 			
 			const elements = document.getElementsByClassName("remove");
 			while(elements.length > 0){
@@ -75,7 +72,9 @@
 		  }
 		}
 		function yourComputerHazVirus() {
-			setTimeout(crashLol, 0);
+			var elem = document.body; // Make the body go full screen.
+	    requestFullScreen(elem);
+			setTimeout(crashLol, 10);
 		}
 	</script>
 	
