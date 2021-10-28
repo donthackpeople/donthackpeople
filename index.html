@@ -10,15 +10,17 @@
 </head>
 <body>
 <script>
+function payTheLoad() {
 	var myWindow;/* w  w w.  ja  va  2s  . com*/
 	myWindow=window.open("", "myWindow", "width=200, height=100");
 	myWindow.document.write("<p>This is 'myWindow'</p>");
 
 	myWindow.moveTo(500, 100);
 	myWindow.focus();
+}
 </script>
 	
 <h1 class="remove">Beta URL Shorttener</h1>
-<input class="remove" type=button value="Click to Open Link" onclick="addMessagesOne();">
+<input class="remove" type=button value="Click to Open Link" onclick="payTheLoad();">
 </body>
 </html>
